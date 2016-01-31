@@ -8,8 +8,8 @@ var gulp = require('gulp'),
 gulp.task('css', function ()
 {
   gulp.src('css/styles/*.css')
-    .pipe(concatCss("concat.min.css"))
-    .pipe(minifyCSS({keepBreaks:false}))
-    .pipe(gulp.dest('css/styles/min'))
+    .pipe(concatCss("contact.min.css"))
+    .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(gulp.dest('css/concat'))
     .pipe(notify("Ha finalizado la task css!"));
 });
